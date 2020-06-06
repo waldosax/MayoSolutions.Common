@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
 	  <AssemblyName>MayoSolutions.Common</AssemblyName>
 	  <RootNamespace>MayoSolutions.Common</RootNamespace>
 	  <Company>Mayo Solutions</Company>
