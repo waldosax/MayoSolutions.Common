@@ -6,7 +6,7 @@
 	  <RootNamespace>MayoSolutions.Common</RootNamespace>
 	  <Company>Mayo Solutions</Company>
 	  <Authors>Rob Mayo</Authors>
-	  <Version>0.0.1</Version>
+	  <Version>0.0.2</Version>
 	  <PackageVersion>$(VersionSuffix)</PackageVersion>
 	  <PackageId>MayoSolutions.Common</PackageId>
 	  <Title>MayoSolutions.Common</Title>
@@ -14,7 +14,7 @@
 	  <PackageIconUrl></PackageIconUrl>
 	  <PackageProjectUrl>https://github.com/waldosax/MayoSolutions.Common</PackageProjectUrl>
 	  <PackageReleaseNotes></PackageReleaseNotes>
-	  <PackageTags>Configuration;Settings</PackageTags>
+	  <PackageTags>MayoSolutions;Extensions</PackageTags>
 	  <IncludeSymbols>true</IncludeSymbols>
 	  <IncludeSource>true</IncludeSource>
 	  <IncludeContentInPack>true</IncludeContentInPack>
