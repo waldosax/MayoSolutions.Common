@@ -1,7 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;netcoreapp2.1</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net48</TargetFrameworks>
+	  <AssemblyName>MayoSolutions.Common</AssemblyName>
+	  <RootNamespace>MayoSolutions.Common</RootNamespace>
+	  <Company>Mayo Solutions</Company>
+	  <Authors>Rob Mayo</Authors>
+	  <Version>0.0.0</Version>
+	  <PackageVersion>$(VersionSuffix)</PackageVersion>
+	  <PackageId>MayoSolutions.Common</PackageId>
+	  <Title>MayoSolutions.Common</Title>
+	  <Copyright>Copyright � MayoSolutions</Copyright>
+	  <PackageIconUrl></PackageIconUrl>
+	  <PackageProjectUrl>https://github.com/waldosax/MayoSolutions.Common</PackageProjectUrl>
+	  <PackageReleaseNotes></PackageReleaseNotes>
+	  <PackageTags>Configuration;Settings</PackageTags>
+	  <IncludeSymbols>true</IncludeSymbols>
+	  <IncludeSource>true</IncludeSource>
+	  <IncludeContentInPack>true</IncludeContentInPack>
   </PropertyGroup>
 
 </Project>

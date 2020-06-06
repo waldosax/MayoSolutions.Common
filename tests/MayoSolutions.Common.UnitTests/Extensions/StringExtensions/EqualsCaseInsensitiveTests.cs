@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using MayoSolutions.Common.Extensions;
+﻿using MayoSolutions.Common.Extensions;
 using NUnit.Framework;
 
 namespace MayoSolutions.Common.UnitTests.Extensions.StringExtensions
