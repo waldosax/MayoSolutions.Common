@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
+using JetBrains.Annotations;
 
 namespace MayoSolutions.Common.Extensions
 {
@@ -8,7 +8,7 @@ namespace MayoSolutions.Common.Extensions
 
 
         [Pure]
-        public static bool EqualsCaseInsensitive(this string a, string b)
+        public static bool EqualsCaseInsensitive([CanBeNull] this string a, [CanBeNull] string b)
         {
             if (a == null && b == null) return true;
             if (a == null) return false;

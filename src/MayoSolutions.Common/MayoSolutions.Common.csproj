@@ -6,7 +6,7 @@
 	  <RootNamespace>MayoSolutions.Common</RootNamespace>
 	  <Company>Mayo Solutions</Company>
 	  <Authors>Rob Mayo</Authors>
-	  <Version>0.0.2</Version>
+	  <Version>0.0.3</Version>
 	  <PackageVersion>$(VersionSuffix)</PackageVersion>
 	  <PackageId>MayoSolutions.Common</PackageId>
 	  <Title>MayoSolutions.Common</Title>
@@ -19,5 +19,9 @@
 	  <IncludeSource>true</IncludeSource>
 	  <IncludeContentInPack>true</IncludeContentInPack>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="10.2.1" />
+  </ItemGroup>
 
 </Project>
