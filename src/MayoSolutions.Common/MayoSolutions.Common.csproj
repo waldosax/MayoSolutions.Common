@@ -7,7 +7,7 @@
 	  <RootNamespace>MayoSolutions.Common</RootNamespace>
 	  <Company>Mayo Solutions</Company>
 	  <Authors>Rob Mayo</Authors>
-	  <Version>0.0.7</Version>
+	  <Version>0.0.8</Version>
 	  <PackageVersion>$(VersionSuffix)</PackageVersion>
 	  <PackageId>MayoSolutions.Common</PackageId>
 	  <Title>MayoSolutions.Common</Title>
