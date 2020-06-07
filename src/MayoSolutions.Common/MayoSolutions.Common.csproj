@@ -1,29 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <!--<TargetFramework>netstandard2.1</TargetFramework>-->
-    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net48</TargetFrameworks>
-	  <AssemblyName>MayoSolutions.Common</AssemblyName>
-	  <RootNamespace>MayoSolutions.Common</RootNamespace>
-	  <Company>Mayo Solutions</Company>
-	  <Authors>Rob Mayo</Authors>
-	  <Version>0.0.8</Version>
-	  <PackageVersion>$(VersionSuffix)</PackageVersion>
-	  <PackageId>MayoSolutions.Common</PackageId>
-	  <Title>MayoSolutions.Common</Title>
-	  <Description>Shared library for all MayoSolutions projects.</Description>
-	  <Copyright>Copyright � MayoSolutions</Copyright>
-	  <PackageIconUrl></PackageIconUrl>
-	  <PackageProjectUrl>https://github.com/waldosax/MayoSolutions.Common</PackageProjectUrl>
-	  <PackageReleaseNotes></PackageReleaseNotes>
-	  <PackageTags>MayoSolutions;Extensions</PackageTags>
-	  <IncludeSymbols>true</IncludeSymbols>
-	  <IncludeSource>true</IncludeSource>
-	  <IncludeContentInPack>true</IncludeContentInPack>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
+		<AssemblyName>MayoSolutions.Common</AssemblyName>
+		<RootNamespace>MayoSolutions.Common</RootNamespace>
+		<Company>Mayo Solutions</Company>
+		<Authors>Rob Mayo</Authors>
+		<Version>0.0.9</Version>
+		<PackageVersion>$(VersionSuffix)</PackageVersion>
+		<PackageId>MayoSolutions.Common</PackageId>
+		<Title>MayoSolutions.Common</Title>
+		<Description>Shared library for all MayoSolutions projects.</Description>
+		<Copyright>Copyright � MayoSolutions</Copyright>
+		<PackageIconUrl></PackageIconUrl>
+		<PackageProjectUrl>https://github.com/waldosax/MayoSolutions.Common</PackageProjectUrl>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageTags>MayoSolutions;Extensions</PackageTags>
+		<IncludeSymbols>true</IncludeSymbols>
+		<IncludeSource>true</IncludeSource>
+		<IncludeContentInPack>true</IncludeContentInPack>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="10.2.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="10.2.1" />
+	</ItemGroup>
 
 </Project>
