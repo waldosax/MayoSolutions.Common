@@ -6,10 +6,11 @@
 	  <RootNamespace>MayoSolutions.Common</RootNamespace>
 	  <Company>Mayo Solutions</Company>
 	  <Authors>Rob Mayo</Authors>
-	  <Version>0.0.4</Version>
+	  <Version>0.0.5</Version>
 	  <PackageVersion>$(VersionSuffix)</PackageVersion>
 	  <PackageId>MayoSolutions.Common</PackageId>
 	  <Title>MayoSolutions.Common</Title>
+	  <Description>Shared library for all MayoSolutions projects.</Description>
 	  <Copyright>Copyright � MayoSolutions</Copyright>
 	  <PackageIconUrl></PackageIconUrl>
 	  <PackageProjectUrl>https://github.com/waldosax/MayoSolutions.Common</PackageProjectUrl>
