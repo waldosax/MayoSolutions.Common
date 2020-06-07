@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!--<TargetFramework>netstandard2.1</TargetFramework>-->
-    <TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net48</TargetFrameworks>
 	  <AssemblyName>MayoSolutions.Common</AssemblyName>
 	  <RootNamespace>MayoSolutions.Common</RootNamespace>
 	  <Company>Mayo Solutions</Company>
