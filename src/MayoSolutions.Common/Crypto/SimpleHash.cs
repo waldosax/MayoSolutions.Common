@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Text;
+using DamienG.Security.Cryptography;
 using MayoSolutions.Common.Extensions;
 
 namespace MayoSolutions.Common.Crypto
@@ -17,6 +18,7 @@ namespace MayoSolutions.Common.Crypto
                 case SimpleHashingAlgorithm.MD5: return input.MD5Hash();
                 case SimpleHashingAlgorithm.SHA1: return input.SHA1Hash();
                 case SimpleHashingAlgorithm.SHA256: return input.SHA256Hash();
+                case SimpleHashingAlgorithm.CRC32: return input.CRC32Hash();
             }
             throw new NotImplementedException();
         }
@@ -156,6 +158,44 @@ namespace MayoSolutions.Common.Crypto
         public static string SHA1HashString(this string inputString)
         {
             return SHA1HashString(Encoding.UTF8.GetBytes(inputString));
+        }
+
+        #endregion
+
+
+        #region CRC32
+
+        /// <summary>
+        /// Returns a CRC32 hash.
+        /// </summary>
+        public static byte[] CRC32Hash(this byte[] input)
+        {
+            using (HashAlgorithm algorithm = new Crc32())
+                return algorithm.ComputeHash(input);
+        }
+
+        /// <summary>
+        /// Returns a CRC32 hash.
+        /// </summary>
+        public static byte[] CRC32Hash(this string inputString)
+        {
+            return Encoding.UTF8.GetBytes(inputString).SHA1Hash();
+        }
+
+        /// <summary>
+        /// Returns a CRC32 hash.
+        /// </summary>
+        public static string CRC32HashString(this byte[] input)
+        {
+            return input.CRC32Hash().GetHexString();
+        }
+
+        /// <summary>
+        /// Returns a CRC32 hash.
+        /// </summary>
+        public static string CRC32HashString(this string inputString)
+        {
+            return CRC32HashString(Encoding.UTF8.GetBytes(inputString));
         }
 
         #endregion

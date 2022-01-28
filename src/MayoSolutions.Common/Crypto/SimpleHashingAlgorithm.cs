@@ -5,6 +5,6 @@
         MD5,
         SHA1,
         SHA256,
-        // TODO: CRC32,
+        CRC32,
     }
 }
