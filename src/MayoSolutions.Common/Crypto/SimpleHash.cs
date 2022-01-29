@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using DamienG.Security.Cryptography;
@@ -54,6 +55,15 @@ namespace MayoSolutions.Common.Crypto
         /// <summary>
         /// Returns an MD5 hash.
         /// </summary>
+        public static byte[] MD5Hash(this Stream input)
+        {
+            using (MD5 md5 = MD5.Create())
+                return md5.ComputeHash(input);
+        }
+
+        /// <summary>
+        /// Returns an MD5 hash.
+        /// </summary>
         public static byte[] MD5Hash(this byte[] input)
         {
             using (MD5 md5 = MD5.Create())
@@ -66,6 +76,14 @@ namespace MayoSolutions.Common.Crypto
         public static byte[] MD5Hash(this string inputString)
         {
             return Encoding.UTF8.GetBytes(inputString).MD5Hash();
+        }
+
+        /// <summary>
+        /// Returns an MD5 hash string.
+        /// </summary>
+        public static string MD5HashString(this Stream input)
+        {
+            return input.MD5Hash().GetHexString();
         }
 
         /// <summary>
@@ -92,6 +110,15 @@ namespace MayoSolutions.Common.Crypto
         /// <summary>
         /// Returns an SHA-256 hash.
         /// </summary>
+        public static byte[] SHA256Hash(this Stream input)
+        {
+            using (HashAlgorithm algorithm = SHA256.Create())
+                return algorithm.ComputeHash(input);
+        }
+
+        /// <summary>
+        /// Returns an SHA-256 hash.
+        /// </summary>
         public static byte[] SHA256Hash(this byte[] input)
         {
             using (HashAlgorithm algorithm = SHA256.Create())
@@ -104,6 +131,14 @@ namespace MayoSolutions.Common.Crypto
         public static byte[] SHA256Hash(this string inputString)
         {
             return Encoding.UTF8.GetBytes(inputString).SHA256Hash();
+        }
+
+        /// <summary>
+        /// Returns an SHA-256 hash string.
+        /// </summary>
+        public static string SHA256HashString(this Stream input)
+        {
+            return input.SHA256Hash().GetHexString();
         }
 
         /// <summary>
@@ -130,6 +165,15 @@ namespace MayoSolutions.Common.Crypto
         /// <summary>
         /// Returns an SHA-1 hash.
         /// </summary>
+        public static byte[] SHA1Hash(this Stream input)
+        {
+            using (HashAlgorithm algorithm = SHA1.Create())
+                return algorithm.ComputeHash(input);
+        }
+
+        /// <summary>
+        /// Returns an SHA-1 hash.
+        /// </summary>
         public static byte[] SHA1Hash(this byte[] input)
         {
             using (HashAlgorithm algorithm = SHA1.Create())
@@ -142,6 +186,14 @@ namespace MayoSolutions.Common.Crypto
         public static byte[] SHA1Hash(this string inputString)
         {
             return Encoding.UTF8.GetBytes(inputString).SHA1Hash();
+        }
+
+        /// <summary>
+        /// Returns an SHA-1 hash string.
+        /// </summary>
+        public static string SHA1HashString(this Stream input)
+        {
+            return input.SHA1Hash().GetHexString();
         }
 
         /// <summary>
@@ -168,6 +220,15 @@ namespace MayoSolutions.Common.Crypto
         /// <summary>
         /// Returns a CRC32 hash.
         /// </summary>
+        public static byte[] CRC32Hash(this Stream input)
+        {
+            using (HashAlgorithm algorithm = new Crc32())
+                return algorithm.ComputeHash(input);
+        }
+
+        /// <summary>
+        /// Returns a CRC32 hash.
+        /// </summary>
         public static byte[] CRC32Hash(this byte[] input)
         {
             using (HashAlgorithm algorithm = new Crc32())
@@ -180,6 +241,14 @@ namespace MayoSolutions.Common.Crypto
         public static byte[] CRC32Hash(this string inputString)
         {
             return Encoding.UTF8.GetBytes(inputString).SHA1Hash();
+        }
+
+        /// <summary>
+        /// Returns a CRC32 hash.
+        /// </summary>
+        public static string CRC32HashString(this Stream input)
+        {
+            return input.CRC32Hash().GetHexString();
         }
 
         /// <summary>
